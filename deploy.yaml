@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: tomcat
-          image: tomcat:<+serviceVariables.varName>
+          image: tomcat:<+env.variables.tomcat_version>
           ports:
             - containerPort: 8080
 
