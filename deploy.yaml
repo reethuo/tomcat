@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: tomcat
-          image: tomcat:9.0.83  # 🔁 Change this tag to 10.x if needed
+          image: tomcat:${tomcat_version}  # 🔁 Change this tag to 10.x if needed
           ports:
             - containerPort: 8080
