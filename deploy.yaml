@@ -16,7 +16,8 @@ spec:
     spec:
       containers:
         - name: tomcat
-          image: tomcat:"{{ .Values.image.repository }}"
+          image: "tomcat:{{ .Values.tomcat_version }}"
+
           ports:
             - containerPort: 8080
 
