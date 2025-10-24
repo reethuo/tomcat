@@ -1,2 +1,2 @@
 image:
-  repository: <+imageTag>
+  repository: <+env.variables.imageTag>
